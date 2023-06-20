@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI-Ux with Bootstrap5</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-md-2">
+    <div class="row w-100 pt-4 pb-5" >
+  <h4 class="text-center"><b>OFSPACE.CO</b></h4>
+    </div>
+  <div class="row">
+    <div class="col">
+    <h6 class="mb-4">MAIN MENU</h6>
+      <div>
+      <button class="btn w-100 p-3 text-start active" style="background:#f7f8f8; border-radius:30px"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+        <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+      </svg> Home</button></div>
+      <div>
+      <button class="btn w-100 p-3 text-start" style="border-radius:30px"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-dots" viewBox="0 0 16 16">
+        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+        <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+      </svg> Message <span class="badge" style="border-radius:20px;float:right; background-color:black; padding:3px 3px;">26</span></button></div>
+      <div>
+      <button class="btn w-100 p-3 text-start" style="border-radius:30px"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pie-chart" viewBox="0 0 16 16">
+        <path d="M7.5 1.018a7 7 0 0 0-4.79 11.566L7.5 7.793V1.018zm1 0V7.5h6.482A7.001 7.001 0 0 0 8.5 1.018zM14.982 8.5H8.207l-4.79 4.79A7 7 0 0 0 14.982 8.5zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+      </svg> Analytics</button></div>
+      <div>
+      <button class="btn w-100 p-3 text-start" style="border-radius:30px"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
+      </svg> Transaction</button></div>
+      <div>
+      <button class="btn w-100 p-3 text-start" style="border-radius:30px"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
+        <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
+      </svg> Payment <span class="badge" style="border-radius:20px;float:right; background-color:black; padding:3px 3px;">12</span></button>
+    </div>
+    </div></div>
+  <div class="row">
+    <div class="col">
+      <h6 class="mt-3  mb-4">ACCOUNT MANAGEMENT</h6>
+      <div class="btn-group w-100">
+        <button class="btn w-100 p-3 text-start" style="border-radius:20px;background-color:#f7f8f8;" data-bs-toggle="dropdown" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
+        </svg> Activity<span style="float:right"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+          <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+        </svg></span></button>
+        <ul class="dropdown-menu p-3 w-100 " style="border:none;">
+        <li><button class="btn w-100 p-3 text-start" style="border-radius:30px">Balance</button></li>
+        <li><div><button class="btn w-100 p-3 text-start" style="border-radius:30px">Spending</button></div></li>
+        <li></li><div><button class="btn w-100 p-3 mb-5 text-start" style="border-radius:30px">Refund</button></div></li>
+        </ul>
+      </div>
+    </div></div>
+
+<!--left side 3rd row -->
+    <div class="row">
+      <div class="col" style="margin-top:350px">
+        <div>
+        <button class="btn mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+      </svg> Setting</button></div>
+        <div><button class="btn mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+          <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+        </svg> Log out</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-10">
+    <div class="row">
+      <div class="col mt-3 mb-2 me-4" align="right">
+        <button class="btn ps-pe-pt-pb-2" style="background:#f7f8f8; border-radius:15px"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+        </svg>
+        </button>
+        <button class="btn ps-pe-pt-pb-2" style="background:#f7f8f8; border-radius:15px"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+          <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+        </svg>
+        </button>
+        <img src="profile.png" width="3%" height="35px" class="img-circle">
+        <span id="profile">Celina<span class="caret"></span></span>
+      </div>
+    </div>
+    <hr>
+    <div class="row mx-1">
+      <div class="col-md-8">
+        <h2>Dashboard</h2>
+<!--        middle column 1st row-->
+        <div class="row d-flex">
+          <div class="col">
+            <div class="card pt-3" style="border:none">
+              <div class="card-body pt-3 "  style="background:#EAF0FE; border-radius:20px;">
+                <div class="d-flex  justify-content-between align-items-center pt-2">
+                  <div><h5>Balance</h5></div>
+                  <div class="pe-3">
+                    <button type="button" class="btn btn-lg" style="background-color:white;border-radius:20px"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+                    </svg></button>
+                  </div></div>
+                <div class="mt-3">
+                  <h3>$ 32,3900</h3>
+                  <p>3.5% than last month</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card pt-3" style="border:none">
+              <div class="card-body pt-3 "  style="background:#FEF5D8; border-radius:20px;">
+                <div class="d-flex justify-content-between align-items-center pt-2">
+                  <div><h5>Spending</h5></div>
+                  <div class="pe-3">
+                    <button type="button" class="btn btn-lg" style="background-color:white;border-radius:20px"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+                    </svg></button>
+                  </div></div>
+                <div class="mt-3">
+                  <h3>$ 32,3900</h3>
+                  <p>7.4% than last month</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card pt-3" style="border:none">
+              <div class="card-body pt-3 "  style="background:#EAF0FE; border-radius:20px;">
+                <div class="d-flex justify-content-between  align-items-center pt-2">
+                  <div><h5>Investment</h5></div>
+                  <div class="pe-3">
+                    <button type="button" class="btn btn-lg" style="background-color:white;border-radius:20px"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+                    </svg></button>
+                  </div></div>
+                <div class="mt-3">
+                  <h3>$ 32,3900</h3>
+                  <p>12.5% than last month</p>
+                </div>
+              </div>
+            </div>
+          </div></div>
+<!--        2nd row strats here-->
+        <div class="row d-flex mt-5">
+          <h4 class="mb-4">Spending</h4>
+          <div class="col-md">
+            <div class="card" style="border:none;border-radius:20px;background-color:#E3E5FD">
+              <button class="btn m-4 w-25" style="border-radius:20px;background-color:white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+              </svg></button>
+              <h6 class="mx-3">Home rent</h6>
+              <p class="mx-3"><b>$</b>1300</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="border:none;border-radius:20px;background-color:#FEF5D8">
+              <button class="btn m-4 w-25" style="border-radius:15px;background-color:white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+              </svg></button>
+              <h6 class="mx-3">Mobile Bill</h6>
+              <p class="mx-3"><b>$</b>1300</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="border:none;border-radius:20px;background-color:#EAF0FE">
+              <button class="btn m-4 w-25" style="border-radius:20px;background-color:white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plug" viewBox="0 0 16 16">
+                <path d="M6 0a.5.5 0 0 1 .5.5V3h3V.5a.5.5 0 0 1 1 0V3h1a.5.5 0 0 1 .5.5v3A3.5 3.5 0 0 1 8.5 10c-.002.434-.01.845-.04 1.22-.041.514-.126 1.003-.317 1.424a2.083 2.083 0 0 1-.97 1.028C6.725 13.9 6.169 14 5.5 14c-.998 0-1.61.33-1.974.718A1.922 1.922 0 0 0 3 16H2c0-.616.232-1.367.797-1.968C3.374 13.42 4.261 13 5.5 13c.581 0 .962-.088 1.218-.219.241-.123.4-.3.514-.55.121-.266.193-.621.23-1.09.027-.34.035-.718.037-1.141A3.5 3.5 0 0 1 4 6.5v-3a.5.5 0 0 1 .5-.5h1V.5A.5.5 0 0 1 6 0zM5 4v2.5A2.5 2.5 0 0 0 7.5 9h1A2.5 2.5 0 0 0 11 6.5V4H5z"/>
+              </svg></button>
+              <h6 class="mx-3">Electric Bill</h6>
+              <p class="mx-3"><b>$</b>1300</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="border:none;border-radius:20px;background-color:#F2F5F1">
+              <button class="btn m-4 w-25" style="border-radius:20px;background-color:white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wifi" viewBox="0 0 16 16">
+                <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.444 12.444 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.518.518 0 0 0 .668.05A11.448 11.448 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049z"/>
+                <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.455 9.455 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065zm-2.183 2.183c.226-.226.185-.605-.1-.75A6.473 6.473 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.478 5.478 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091l.016-.015zM9.06 12.44c.196-.196.198-.52-.04-.66A1.99 1.99 0 0 0 8 11.5a1.99 1.99 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
+              </svg></button>
+              <h6 class="mx-3">Internet Bill</h6>
+              <p class="mx-3"><b>$</b>1300</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="border:none;border-radius:20px;background-color:#F1ECFF">
+              <button class="btn m-4 w-25" style="border-radius:20px;background-color:white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fuel-pump" viewBox="0 0 16 16">
+                <path d="M3 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-5Z"/>
+                <path d="M1 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v8a2 2 0 0 1 2 2v.5a.5.5 0 0 0 1 0V8h-.5a.5.5 0 0 1-.5-.5V4.375a.5.5 0 0 1 .5-.5h1.495c-.011-.476-.053-.894-.201-1.222a.97.97 0 0 0-.394-.458c-.184-.11-.464-.195-.9-.195a.5.5 0 0 1 0-1c.564 0 1.034.11 1.412.336.383.228.634.551.794.907.295.655.294 1.465.294 2.081v3.175a.5.5 0 0 1-.5.501H15v4.5a1.5 1.5 0 0 1-3 0V12a1 1 0 0 0-1-1v4h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V2Zm9 0a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v13h8V2Z"/>
+              </svg></button>
+              <h6 class="mx-3">Gasoline</h6>
+              <p class="mx-3"><b>$</b>1300</p>
+            </div>
+          </div>
+        </div>
+<!--        table row-->
+        <div class="row mt-5 me-2 ms-2">
+          <div class="col">
+            <div class="d-flex mb-4 justify-content-between">
+              <div><h4 class="mb-3 text-left">Transactions</h4></div>
+              <div>
+                <button class="btn" style="border-style:solid;border-radius:15px;border-color:#ededed"><b>Newest</b></button>
+                <button class="btn" style="border-style:solid;border-radius:15px;border-color:white">Oldest</button>
+              </div>
+            </div>
+            <table class="table" style="border:none;">
+              <thead class="">
+              <tr style="color:grey">
+                <th>Name</th>
+                <th>Status</th>
+                <th >Date</th>
+                <th class="text-center">Amount</th>
+              </tr>
+              </thead>
+              <tbody><div class="pt-2">
+              <tr style="border: solid white; border-top-color:#F2F5F1;">
+                <td><img src="profile.png" width="10%" height="30px" class="img-circle"><b> Royal Arkin</b></td>
+                <td><span class="btn-sm" Style="border-radius:20px; background-color:#fff1c9; color:#af994f;">In Progress</span></td>
+                <td>22 Jan,2023</td>
+                <td class="text-center"><b>$12,334</b></td>
+              </tr>
+              <tr style="border: solid white">
+                <td><img src="profile.png" width="10%" height="30px" class="img-circle"><b> Saimon Tanvir</b></td>
+                <td><span class="btn-sm" Style="border-radius:20px; background-color:#D8F2ED; color:#559D8B;">Completed</span>
+                </td>
+                <td>28 Dec,2023</td>
+                <td class="text-center"><b>$20,334</b></td>
+              </tr>
+              <tr style="border: solid white">
+                <td><img src="profile.png" width="10%" height="30px" class="img-circle"><b> Washi Bin</b></td>
+                <td><span class="btn-sm" Style="border-radius:20px; background-color:#D8F2ED; color:#559D8B;">Completed</span></td>
+                <td>12 Dec,2023</td>
+                <td class="text-center"><b>$42,334</b></td>
+              </tr>
+              <tr style="border: solid white">
+                <td class="text-left"><img src="profile.png" width="10%" height="30px" class="img-circle"><b> Zulia Andre</b></td>
+                <td><span class="btn-sm" Style="border-radius:20px; background-color:#D8F2ED; color:#559D8B">Completed</span></td>
+                <td>12 Dec,2023</td>
+                <td class="text-center"><b>$42,334</b></td>
+              </tr></div>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+<!--right side code-->
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col">
+            <div class="text-center">
+            <img class="img-circle mt-3 mb-3" width="20%" height="100px" src="profile.png" alt="profile_picture">
+            <h3 style="color:black;" class="text-center">Al Raihan</h3>
+            <h6 style="color:grey;" class="text-center">#193300</h6>
+          </div>
+            <div class="text-center m-3" >
+              <button type="button" class="btn" style="background:#EAF0FE;padding:5px 50px; border-radius:20px">Sent</button>
+              <button type="button" class="btn" style="background:#F2F5F1;padding:5px 35px; border-radius:20px">Request</button>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="d-flex justify-content-between mb-3">
+            <div><h3 style="color:black;" >Send again</h3></div>
+         <div class="pe-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+          </svg></div>
+        </div>
+          <div class="col d-flex justify-content-between">
+            <div>
+            <button type="button" class="btn p-3" style="background:#F2F5F1;border-radius:30px">AB</button>
+              <h6 align="center">Adam<br>Doe</h6></div>
+            <div><button type="button" class="btn p-3" style="background:#FEF5D8;border-radius:30px">AB</button>
+              <h6 align="center">Danial<br>Deo</h6></div>
+            <div><button type="button" class="btn p-3" style="background:#EAF0FE;border-radius:30px">AB</button>
+              <h6 align="center">Will<br>Smith</h6></div>
+            <div><button type="button" class="btn p-3" style="background:#E3E5FD;border-radius:30px">AB</button>
+              <h6 align="center">Sean<br>paul</h6></div>
+            <div><button type="button" class="btn p-3" style="background:#F2F5F1;border-radius:30px">AB</button>
+              <h6 align="center">Ricky<br>Martin</h6></div>
+          </div>
+        </div>
+<!--        3rd row-->
+        <div class="row mb-3">
+          <div class="d-flex justify-content-between mt-5">
+            <div>
+              <h4 style="color:black;" class="text-left">Recent Transaction</h4></div>
+            <div class="pe-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+              <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+            </svg></div>
+          </div>
+          <div class="col">
+            <div class="row p-1 my-2">
+              <div class="d-flex justify-content-between">
+              <div class="col-2 me-2" align="center">
+              <button style="background:#f8f7f8;border-radius:15px;padding:15px 20px" class="btn btn-lg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-dash" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+              </svg>
+              </button></div>
+              <div class="col-7 me-2" align="left">
+                <h5><b>Shopping</b></h5>
+                <p> West Mart Complex</p>
+              </div>
+              <div class="col-3">
+                <h5>-1,000$</h5>
+              </div>
+
+              </div></div>
+            <div class="row p-1 my-2">
+              <div class="d-flex justify-content-between">
+                <div class="col-2 me-2" align="center">
+                  <button style="background:#f8f7f8;border-radius:15px;padding:15px 20px" class="btn btn-lg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                    <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+                    <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+                  </svg>
+                  </button></div>
+                <div class="col-7 me-2" align="left">
+                  <h5><b>Apple Payment</b></h5>
+                  <p>Payment Received</p>
+                </div>
+                <div class="col-3">
+                  <h5>+3,000$</h5>
+                </div>
+              </div></div>
+
+            <div class="row p-1 my-2">
+              <div class="d-flex justify-content-between">
+                <div class="col-2 me-2" align="center">
+                  <button style="background:#f8f7f8;border-radius:15px;padding:15px 20px" class="btn btn-lg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-paypal" viewBox="0 0 16 16">
+                    <path d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.351.351 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91.379-.27.712-.603.993-1.005a4.942 4.942 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.687 2.687 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.695.695 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016c.217.124.4.27.548.438.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.873.873 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.352.352 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32.845-5.214Z"/>
+                  </svg>
+                  </button></div>
+                <div class="col-7 me-2" align="left">
+                  <h5><b>Paypal Payment</b></h5>
+                  <p>Paypal payment Received</p>
+                </div>
+                <div class="col-3">
+                  <h5>+1,000$</h5>
+                </div>
+              </div></div>
+
+            <div class="row p-1 my-2">
+              <div class="d-flex justify-content-between">
+                <div class="col-2 me-2" align="center">
+                  <button style="background:#f8f7f8;border-radius:15px;padding:15px 20px" class="btn btn-lg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                    <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z"/>
+                  </svg>
+                  </button></div>
+                <div class="col-7 me-2" align="left">
+                  <h5><b>Air Ticket</b></h5>
+                  <p>Emirates Airline</p>
+                </div>
+                <div class="col-3">
+                  <h5>-121,000$</h5>
+                </div>
+              </div></div>
+
+            <div class="row p-1 my-2">
+              <div class="d-flex justify-content-between">
+                <div class="col-2 me-2" align="center">
+                  <button style="background:#f8f7f8;border-radius:15px;padding:15px 20px" class="btn btn-lg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-front" viewBox="0 0 16 16">
+                    <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
+                    <path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+                  </button></div>
+                <div class="col-7 me-2" align="left">
+                  <h5><b>Credit Card Bill</b></h5>
+                  <p>Credit Card Payment</p>
+                </div>
+                <div class="col-3">
+                  <h5>-1,000$</h5>
+                </div>
+              </div></div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
